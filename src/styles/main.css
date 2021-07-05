@@ -1,0 +1,493 @@
+/* Link Color theme : https://colorhunt.co/palette/281238 */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+p.copyright {
+  color: #fff;
+  padding: 15px 0;
+}
+a {
+  padding: 14px 0;
+}
+
+.btn {
+  padding: 10px;
+  font-weight: 700;
+  color: #f5e6ca;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fb9300;
+  border: 1px solid transparent;
+  margin: 1.3em 0;
+  font-size: 18px;
+  border-radius: 0.276em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #f54748;
+}
+
+img {
+  display: block;
+}
+
+/*
+  AppBar
+*/
+#hamburgerButton{
+  color: #f5e6ca;
+}
+.app-bar {
+  padding: 8px 16px;
+  background-color: #fb9300;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  border-bottom: 2px solid rgba(221, 221, 221, 0.5);
+}
+ 
+.app-bar .app-bar_menu {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+ 
+.app-bar .app-bar_menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+}
+ 
+.app-bar .app-bar_brand {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar_brand h1 {
+  color: #f5e6ca;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 20px;
+  user-select: none;
+}
+ 
+.app-bar .app-bar_navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 10px 0;
+  background-color: #fb9300;
+  overflow: hidden;
+}
+ 
+.app-bar .app-bar_navigation.open {
+  left: 0;
+}
+ 
+.app-bar .app-bar_navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f5e6ca;
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.app-bar .app-bar_navigation ul li a:hover {
+  color: #fff;
+}
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #f54748;
+  color: #f5e6ca;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Hero  */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 610px;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+  background-image: url("/images/heros/hero-image_2.jpg");
+  background-position: center;
+  background-color: #8888;
+}
+
+.hero_inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.hero_title {
+  color: #f5e6ca;
+  text-shadow: 2px 2px #fb9300;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hero_tagline {
+  color: #f5e6ca;
+  text-shadow: 2px 2px #fb9300;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 23px;
+}
+/*
+ * content
+ */
+
+.content {
+  margin: 0 auto;
+}
+.content__heading{
+  padding: 0 32px;
+  width: 100%;
+}
+
+/*
+ * headline
+ */
+
+ .headline{
+    margin: 50px 32px 32px 32px;
+ }
+
+.headline_figure {
+  width: 100%;
+}
+
+.headline_figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.headline_figure figcaption {
+  text-align: center;
+  color: #6666;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.headline_content {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.headline_title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.headline_description {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+/*
+ * latest
+ */
+
+.latest {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+/*
+  Restaurants
+*/
+ 
+.category{
+  background-color: #fb9300;
+  font-size: 14px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+.category:hover{
+  background-color: #f54748;
+}
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px;
+}
+ 
+/* 
+  Customer Review 
+*/
+.customer-review {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border: #8888 1px solid;
+  overflow: hidden;
+}
+ 
+.customer-review_header {
+  position: relative;
+  height:60px;
+}
+.customer-review_header .title{
+  font-weight: bold;
+  font-size: 1.37em;
+  padding: 0.3em;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  background-color: #fb9300;
+}
+ 
+.customer-review .customer-review_header .customer-review_header_date {
+  position: relative;
+  font-size: 12px;
+  top: 0;
+  padding: 4px 8px;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  display: inline-block;
+  background-color: #f54748;
+  color: white;
+}
+ 
+.customer-review .customer-review_header .customer-review_header_date .customer-review_header_date_time {
+  margin-left: 10px;
+}
+ 
+.customer-review .customer-review_content {
+  padding: 16px;
+}
+ 
+.customer-review .customer-review_content h3 {
+  margin: 8px 0 8px 0;
+}
+ 
+.customer-review .customer-review_content h3 a {
+  color: #fb9300;
+  text-decoration: none;
+}
+ 
+.customer-review .customer-review_content h3 a:hover {
+  color: #f54748;
+}
+
+.customer-review .customer-review_content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+ 
+/*
+  Restaurant Item
+*/
+ 
+.restaurant-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+ 
+.restaurant-item_header {
+  position: relative;
+}
+ 
+.restaurant-item .restaurant-item_header .restaurant-item_header_poster {
+  width: 100%;
+}
+ 
+.restaurant-item .restaurant-item_header .restaurant-item_header_rating {
+  position: absolute;
+  top: 0;
+  padding: 8px;
+  width: 58px;
+  left: 0;
+  display: inline-block;
+  background-color: #f54748;
+  border-radius: 0 0 10px 0;
+  color: white;
+}
+ 
+.restaurant-item .restaurant-item_header .restaurant-item_header_rating .restaurant-item_header_rating_score {
+  margin-left: 10px;
+}
+ 
+.restaurant-item .restaurant-item_content {
+  padding: 16px;
+}
+ 
+.restaurant-item .restaurant-item_content h3 {
+  margin: 8px 0 8px 0;
+}
+ 
+.restaurant-item .restaurant-item_content h3 a {
+  color: #fb9300;
+  text-decoration: none;
+}
+ 
+.restaurant-item .restaurant-item_content h3 a:hover {
+  color: #f54748;
+}
+
+.restaurant-item .restaurant-item_content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+ 
+ 
+/*
+  Restaurant
+*/
+
+.restaurant {
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+ 
+.restaurant .restaurant_poster {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+ 
+.restaurant .restaurant_info h4 {
+  margin: 8px 0;
+}
+.menu h4 {
+  font-weight: bold;
+  font-size: 1.37em;
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 0 0 10px 10px;
+  background-color: #fb9300;
+}
+
+.menu-food {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+.menu-food li {
+  padding: 0.5em 0;
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  background-color: #fb9300;
+  border: 1px solid #f54748;
+  border-width: 0 0 0.5px;
+}
+.menu-food li:hover{
+  background-color: #f54748;
+  border: 0.5px solid #fb9300;
+}
+
+.menu-drink {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+.menu-drink li {
+  padding: 0.5em 0;
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  background-color: #fb9300;
+  border: 0.5px solid #f54748;
+  border-width: 0 0 0.5px;
+}
+.menu-drink li:hover {
+  background-color: #f54748;
+  border: 0.5px solid #fb9300;
+}
+
+/*
+ * footer
+ */
+
+footer {
+  bottom: 0;
+  background-color: #fb9300;
+  padding: 2em;
+  text-align: center;
+}
+
+footer ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 14px;
+}
+
+footer a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: #f5e6ca;
+}
